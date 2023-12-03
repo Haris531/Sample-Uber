@@ -1,0 +1,546 @@
+<html>
+    <head>
+        <title>uber</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            body{
+                padding: 0%;
+                margin: 0%;
+                background-image: url(car.jpg);
+            }
+            .container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 65px;
+                width: 100%;
+                background-color: black;
+            }
+            .box1{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 25%;
+                margin-left: 30px;
+            }
+            .box1 h2{
+                color: antiquewhite;
+                margin-left: 20px;
+                font-family: sans-serif;
+            }
+            .box1 a{
+                text-decoration: none;
+                color: white;
+                font-family: arial; 
+                margin-left: 30px;  
+            }
+            .box2{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 25%;
+            }
+            .box2 a{
+                text-decoration: none;
+                color: white;
+                font-family: arial;    
+            }
+            .box2 button{
+                width: 70px;
+                height: 30px;
+                border: none;
+                border-radius: 20px;
+                background-color: orangered;
+                margin-right: 30px; 
+            }
+            .container1{
+                width: 550px;
+                height: 85vh;
+                background-color: white;
+                margin-top: 70px;
+                margin-left: 100px;
+            }
+            .box3{
+                width: 100%;
+                height: 120px;
+                background-color: whitesmoke;
+            }
+            .icons{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 20px;
+            }
+            .icons-name{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 20px;
+            }
+            .icons-name a{
+                text-decoration: none;
+                color: black;
+                font-family: arial; 
+            }
+            .box4 h1{
+                font-family: sans-serif;
+                font-size: 50px;
+                margin-left: 20px;
+            }
+            .box4 h4{
+                font-family: arial;
+                margin-left: 20px;
+                font-size: larger;
+                font-weight: 200;
+            }
+            .box4 button{
+                width: 140px;
+                height: 45px;
+                border: none;
+                border-radius: 10px;
+                background-color: black;
+                color: white;
+                font-family: arial;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            .box4 h3{
+                font-family: arial;
+                font-size: medium;
+                font-weight: 200;
+                margin-left: 20px;
+                margin-top: 50px;       
+            }
+            h3 span{
+               border-bottom: 1px solid black;
+            }
+            .container2{
+                background-color: white;
+                width: 100%;
+                height: 300vh;      
+            }
+            .container2 span a{
+                border-bottom: 1px solid black;
+            }
+            .container2-1{
+                width: 100%;
+                height: 45vh;
+                background-color: whitesmoke;
+                margin-top: 60px;
+            }
+            .container2-1 h1{
+                font-family: sans-serif;
+                font-size: 35px;
+                padding-top: 60px;
+                padding-left: 60px;
+            }
+            .container2-1 h4{
+                font-family: sans-serif;
+                font-size: medium;
+                padding-left: 60px;
+            }
+            .container2-1 button{
+                width: 140px;
+                height: 45px;
+                border: none;
+                border-radius: 10px;
+                background-color: black;
+                color: white;
+                font-family: arial;
+                font-size: larger;
+                margin-left: 60px;
+                margin-top: 20px;
+            }
+            .container2-2 h1{
+                font-family: sans-serif;
+                font-size: 35px;
+                padding-top: 40px;
+                padding-left: 60px;
+            }
+            .container2-2 img{
+                padding-left: 60px;
+            }
+            .container2-3-1{
+                width: 50%;
+                float: left;
+            }
+            .container2-3-1 h2{
+                font-family: sans-serif;
+                font-size: 20px;
+                padding-left: 60px;
+            }
+            .container2-3-1 h4{
+                font-family: arial;
+                font-size: 15px;
+                padding-left: 60px;
+            }
+            .container2-3-1 a{
+                text-decoration: none;
+                padding-left: 60px;
+                font-family: arial;
+                color: black;
+            }
+            .container2-3-2{
+                width: 50%;
+                float: right;
+              
+            }
+            .container2-3-2 h2{
+                font-family: sans-serif;
+                font-size: 20px;
+                           
+            }
+            .container2-3-2 h4{
+                font-family: arial;
+                font-size: 15px;
+            }
+            .container2-3-2 a{
+                text-decoration: none;
+                font-family: arial;
+                color: black;
+            }
+            .container3{ 
+                height: 300px;
+                width: 100%;   
+                margin-top: 200px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .container3-1{
+                width: 30%;
+                margin-left: 40px;
+            }
+            .container3-1 h3{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container3-1 h4{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container3-2{
+                width: 30%;
+            }
+            .container3-2 h3{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container3-2 h4{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container3-3{
+                width: 25%;
+            }
+            .container3-3 h3{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container3-3 h4{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container3 a{
+                text-decoration: none;
+                color: black;
+                font-family: arial;    
+            }
+            .container3 span a{
+                border-bottom: 1px solid black;
+            }
+            .container4{
+                width: 100%;
+                height: 350px;
+                background-color: whitesmoke;
+            }
+            .container4 h1{
+                font-family: arial;
+                font-size: 40px;
+                padding-left: 60px;
+                padding-top: 50px;
+            }
+            .container4-1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .container4-1-1{
+                width: 40%;
+                height: 170px;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .container4-1-1 img{
+                width: 150px;
+                height: 150px;
+            }
+            .container4-1-1 a{
+                text-decoration: none;
+                color: black;
+                font-family: arial;
+                font-size: 20px;
+            }
+            .container4-1-2{
+                width: 40%;
+                height: 170px;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .container4-1-2 img{
+                width: 150px;
+                height: 150px;
+            }
+            .container4-1-2 a{
+                text-decoration: none;
+                color: black;
+                font-family: arial;
+                font-size: 20px;
+            }
+            .container5{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+               
+               
+            }
+            .container5 a{
+                text-decoration: none;
+                color: black;
+                font-family: arial;
+                font-size: 40px;
+                padding-top: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+             
+            }
+            .container5 span a{
+                border-bottom: 2px solid black;
+            }
+            /* .container6{
+                width: 100%;
+                height: 200px;
+                background-color: black;
+                margin-top: 50px;
+            }
+            .container6 h2{
+                font-family: arial;
+                font-size: larger;
+                padding-left: 60px;
+                color: white;
+                
+            }
+            .container6 h4{
+                font-family: arial;
+                font-size: larger;
+                padding-left: 60px;
+                color: white;
+            } */
+            /* .container7{
+                background-color: black;
+                max-height: fit-content;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .container7 a{
+                text-decoration: none;
+                font-family: arial;
+                font-size: larger;
+                color: white;
+            }
+            .container7 h2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .container7-1{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+               align-items: center;
+            }
+            .container7-2{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+               align-items: center;
+            }
+            .container7-3{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+               align-items: center;
+            }
+            .container7-4{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+               align-items: center;
+            }
+             */
+          
+           
+        </style>
+    </head>
+    <body>
+       
+        <div class="container">
+            <div class="box1">
+                <h2>Uber</h2>
+                <a href="company">Company</a>
+                <a href="safety.html">Saftey</a>
+                <a href="help.html">Help</a>
+            </div>
+            <div class="box2">
+                <a href="product">Products</a>
+                <a href="uber-login.html">Log in</a>
+                <button><a href="uber-signup.html">Sign up</a></button>
+            </div>
+        </div>
+
+        <div class="container1">
+
+    <div class="box3">
+            <div class="icons">
+            <i class='bx bx-signal-5'></i>
+            <i class='bx bx-fork'></i>
+            <i class='bx bx-car'></i>
+        </div>
+             <div class="icons-name">
+                <a href="#">Drive</a>
+                <a href="uber-eat.html">Eat</a>
+                <a href="ride">Ride</a>
+             </div>
+    </div>
+            
+            <div class="box4">
+                <h1>Get in the driver’s <br> seat and get paid</h1>
+                <h4>Drive on the platform with the largest network of active riders.</h4>
+                <button>Sign up to drive</button>
+               <h3><span>Learn more about driving and delivering</span></h3>
+            </div>
+          
+</div>
+     <div class="container2">
+            <div class="container2-1">
+            <h1>The Uber you know, reimagined for business</h1>
+            <h4>A platform for managing global rides and meals, and local deliveries, for companies of any size.</h4>
+            <button>Get started</button>
+        </div>
+
+            <div class="container2-2">
+                <h1>Focused on safety, wherever you go</h1>
+                <img src="mann.webp" alt="">
+                <img src="park.webp" alt="">
+            </div>
+
+            <div class="container2-3">
+            <div class="container2-3-1">
+                <h2>Our commitment to your safety</h2>
+                <h4>With every safety feature and every standard in our Community Guidelines, <br>
+                     we're committed to helping to create a safe environment for our users.</h4>
+               <a href="read">Read about our Community Guidelines</a>     
+            </div>
+            <div class="container2-3-2">
+                <h2>Setting 10,000+ cities in motion</h2>
+                <h4>The app is available in thousands of cities worldwide, so you can request a <br>
+                     ride even when you’re far from home.</h4>
+                  <span><a href="">View all cities</a> </span>  
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="container3-1">
+                <i class='bx bx-child'></i>
+                <h3>About us</h3>
+                <h4>Find out how we started, what drives us, and how <br>
+                     we’re reimagining how the world moves.</h4>
+              <span> <a href="more">Learn more about Uber</a>   </span> 
+            </div>
+            <div class="container3-2">
+                <i class='bx bx-news'></i>
+                <h3>Newsroom</h3>
+                <h4>See announcements about our latest releases, <br> initiatives, and partnerships.</h4>
+             <span> <a href="room">Go to Newsroom</a> </span>
+            </div>
+            <div class="container3-3">
+                <i class='bx bx-home-alt-2'></i>
+                <h3>Global citizenship</h3>
+                <h4>Read about our commitment to making a <br> positive impact in the cities we serve.</h4>
+              <span> <a href="see">See our partnerships</a> </span>
+            </div>
+        </div>
+
+            <div class="container4">
+                <h1>It’s easier in the apps</h1>
+                <div class="container4-1">
+                <div class="container4-1-1">
+                    <img src="qr-code.webp" alt="">
+                    <a href="download">Download the Uber app</a>
+                </div>
+                <div class="container4-1-2">
+                    <img src="qr-code.webp" alt="">
+                    <a href="download">Download the Driver app</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="container5">
+              <span><a href="sign">Sign up to drive</a></span>
+             <span><a href="sign">Sign up to ride</a></span> 
+            </div>
+
+             <!-- <div class="container6">
+            <h2>Uber</h2>
+            <h4>Visit Help Center</h4>
+        </div>
+
+            <div class="container7"> 
+              
+                <div class="container7-1">
+                        <h2>Company</h2>
+                        <a href="about">About us</a>
+                        <a href="our">Our offsprings</a>
+                        <a href="new">Newsroom</a>
+                        <a href="blog">Blog</a>
+                        <a href="career">Careers</a>
+                        <a href="ai">AI</a> 
+                </div>
+                <div class="container7-2">
+                    <h2>Products</h2>
+                    <a href="ride">Ride</a>
+                    <a href="drive">Drive</a>
+                    <a href="eat">Eat</a>
+                    <a href="uber">Uber for business</a>
+                </div>
+                <div class="container7-3">
+                    <h2>Global citizenship</h2>
+                    <a href="safety">Safety</a>
+                    <a href="diversity">Diversity and Inclusion</a>
+                </div>
+                <div class="container7-4">
+                    <h2>Travel</h2>
+                    <a href="reserve">Reserve</a>
+                    <a href="airport">Airport</a>
+                    <a href="city">Cities</a>
+                </div>
+            </div> -->
+
+        </div>
+
+       
+
+        
+    </body>
+ 
+
+</html>
